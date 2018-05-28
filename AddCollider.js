@@ -101,20 +101,29 @@ function check_collider() {
                 // 在这里做碰撞触发后的事
                 p1.collisionEnter()
                 p1.collisionStay()
+                p2.collisionEnter()
+                p2.collisionStay()
             } else if (p1.x >= p2.x && p2.x + p2.width >= p1.x && p2.y < p1.y + p1.width && p2.y + p2.width > p1.y) {
                 // 在这里做碰撞触发后的事
                 p1.collisionEnter()
                 p1.collisionStay()
+                p2.collisionEnter()
+                p2.collisionStay()
             } else if (p2.y >= p1.y && p1.y + p1.height >= p2.y && p1.x < p2.x + p2.height && p1.x + p1.height > p2.x) {
                 // 在这里做碰撞触发后的事
                 p1.collisionEnter()
                 p1.collisionStay()
+                p2.collisionEnter()
+                p2.collisionStay()
             } else if (p1.y >= p2.y && p2.y + p2.height >= p1.y && p2.x < p1.x + p1.height && p2.x + p2.height > p1.x) {
                 // 在这里做碰撞触发后的事
                 p1.collisionEnter()
                 p1.collisionStay()
+                p2.collisionEnter()
+                p2.collisionStay()
             } else {
                 p1.collisionExit()
+                p2.collisionExit()
             }
         }
     }
